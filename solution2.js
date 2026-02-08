@@ -1,0 +1,50 @@
+//conditional problem
+
+//q1. Maximum of three no.
+function maxOfThree(a,b,c) {
+    let max;
+    if(a>=b && a>=c){
+        max={a}
+    }else if(b>=c){
+        max={b}
+    }else{
+        max={c}
+    }
+    return max;
+}
+console.log(maxOfThree(10,20,5));
+//opti
+function maxOfThree(a,b,c) {
+   let max= Math.max(a,b,c)
+return max
+}
+console.log(maxOfThree(100,10,10));
+//q2. check if a no. is positive,neg,zero
+function posNegZero(a) {
+    let num;
+    if(a<0){
+        num='negative';
+    }else if(a>0){
+        num='positive';
+    }else if(a==0){
+        num='zero';
+    }
+    return num;
+}
+console.log(posNegZero(0));
+ 
+//q3. electricity bill
+function unitCalculation(unit){
+let total = 0;
+if(unit<=100){
+    total = unit*5;
+}else if(unit<=200){
+total=(100*5)+(unit -100 )*7;
+}else if(unit<=300){
+    total = (100*5)+(100*7)+(unit - 200)*10;
+}else {
+    total = (100*5)+(100*7)+(100*10)+(unit - 300)*12
+}
+return total
+}
+console.log(unitCalculation(230));
