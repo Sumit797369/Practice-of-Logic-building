@@ -48,3 +48,19 @@ total=(100*5)+(unit -100 )*7;
 return total
 }
 console.log(unitCalculation(230));
+//q4. Check if a Character is a Vowel or Consonant
+function vowel(vow){
+    let output;
+    if (vow == "a"||vow == "e"||vow == "i"||vow == "o"||vow == "u"){
+        output="it is vowel"
+        
+    }else{
+        output="invalid"
+        
+    }
+    return output
+}
+console.log(vowel("c"));
+
+
+ 
