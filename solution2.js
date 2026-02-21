@@ -62,5 +62,25 @@ function vowel(vow){
 }
 console.log(vowel("c"));
 
+//or
+function checkVowels(char = '0'){
+    if('aeiou'.includes(char.toLowerCase()) && char != ""){
+        return 'vowel'
+    } else if(/[a-z]/.test(char.toLowerCase())){
+        return 'Consonants'
+    }
+    return 'Not a Valid aplhabet'
+}
 
+//q5.Leap year
+function leapYear(a){
+    let b;
+    if (a%4 == 0 && a % 100 != 0 || a%400 == 0) {
+        b = "Leap Year";
+    }else{
+        b = "Not Leap Year"
+    }
+    return b;
+}
+console.log(leapYear(2000));
  
