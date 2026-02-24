@@ -83,14 +83,7 @@ function leapYear(a){
     return b;
 }
 console.log(leapYear(2000));
-//q6. Print Right-Angled Star Triangle
 
-for(i=1;i<=5;i++){
-let str ="";
-for(j=1;j<=5;j++){
-    str +='*'
-}
-}
  //charcodeAt
 function abc(val){
 if(val.charCodeAt(0)>=65 && val.charCodeAt(0)<=90 ){
