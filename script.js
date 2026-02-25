@@ -1,4 +1,6 @@
-for(let i=1;i<=a;i++){
-    console.log(a-i+1);
-    
+for(i=1;i<=5;i++){
+let str ="";
+for(j=1;j<=5;j++){
+    str +='*'
+}
 }
