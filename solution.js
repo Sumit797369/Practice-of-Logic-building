@@ -16,9 +16,7 @@ for(i=a;i>=1;i--){
 }
 
 for(let i=1;i<=a;i++){
-    console.log(a-i+1)
-    
-    ;
+    console.log(a-i+1);
     
 }
 // q3. print even no.
