@@ -1,6 +1,4 @@
-for (let i = 0; i <a; i++) {
-
-
-
+for(i=a;i>=1;i--){
     console.log(i);
+    
 }
