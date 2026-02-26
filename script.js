@@ -1,8 +1,9 @@
-function checkVowels(char = '0'){
-    if('aeiou'.includes(char.toLowerCase()) && char != ""){
-        return 'vowel'
-    } else if(/[a-z]/.test(char.toLowerCase())){
-        return 'Consonants'
+let row = 8
+for(i=row;i>=1;i--){
+    let str = "";
+    for(j=i;j>=1;j--){
+        str += '*';
     }
-    return 'Not a Valid aplhabet'
+    console.log(str);
+    
 }
