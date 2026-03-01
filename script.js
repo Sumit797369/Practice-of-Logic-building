@@ -1,9 +1,17 @@
-let row = 8
-for(i=row;i>=1;i--){
-    let str = "";
-    for(j=i;j>=1;j--){
-        str += '*';
-    }
-    console.log(str);
-    
-}
+const form = document.getElementById("myForm");
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+
+  const formData = {
+    name: name,
+    email: email
+  };
+
+  localStorage.setItem("userData", JSON.stringify(formData));
+
+  console.log("Saved:", formData);
+});
