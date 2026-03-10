@@ -12,6 +12,8 @@ form.addEventListener("submit",function(e){
   hobbies.forEach(function(hobby){
     if(hobby.checked){
         slectedhobbies.push(hobby.value)
+        // console.log(hobby);
+        
     }
   })
     
@@ -22,7 +24,7 @@ form.addEventListener("submit",function(e){
     hobbies:slectedhobbies
 
   }
-  console.log(data);
+  // console.log(data);
   
     
 })
