@@ -1,10 +1,11 @@
-const count = document.getElementById("count")
-count.addEventListener("input",function(e){
-    let inp = e.target.value.length;
-    // count.value = inp.length;
-    
-
-   console.log(inp);
-   
-   
+let prm = new Promise((resolve, reject) => {
+  console.log("aa rha hai");
+  
+setTimeout(()=>{
+  resolve("done")
+},200)
+});
+prm.then((res)=>{
+  console.log(res);
+  
 })
